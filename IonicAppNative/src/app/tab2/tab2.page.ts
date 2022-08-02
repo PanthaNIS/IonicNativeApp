@@ -15,6 +15,14 @@ export class Tab2Page {
     this.lastEmittedValue = (ev as RangeCustomEvent).detail.value;
   }
 
+  speak() {
+    console.log('speak');
+  }
+
+  stop() {
+    console.log('stop');
+  }
+
   constructor() {}
 
 }

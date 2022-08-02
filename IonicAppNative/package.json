@@ -20,6 +20,7 @@
     "@angular/platform-browser-dynamic": "^14.0.0",
     "@angular/router": "^14.0.0",
     "@awesome-cordova-plugins/device": "^5.44.0",
+    "@awesome-cordova-plugins/text-to-speech-advanced": "^5.44.0",
     "@capacitor/app": "4.0.1",
     "@capacitor/core": "4.0.1",
     "@capacitor/haptics": "4.0.1",
@@ -54,6 +55,7 @@
     "cordova-plugin-ionic-webview": "^5.0.0",
     "cordova-plugin-splashscreen": "5.0.2",
     "cordova-plugin-statusbar": "^2.4.2",
+    "cordova-plugin-tts-advanced": "^0.5.2",
     "eslint": "^7.6.0",
     "eslint-plugin-import": "2.22.1",
     "eslint-plugin-jsdoc": "30.7.6",
@@ -77,7 +79,8 @@
       "cordova-plugin-device": {},
       "cordova-plugin-splashscreen": {},
       "cordova-plugin-ionic-webview": {},
-      "cordova-plugin-ionic-keyboard": {}
+      "cordova-plugin-ionic-keyboard": {},
+      "cordova-plugin-tts-advanced": {}
     },
     "platforms": [
       "ios"

@@ -9,9 +9,24 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
+      <ion-title size="large">Text-To-Speech</ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-card>
+    <ion-card-content>
+      <h3>Please Enter the text in input field below.</h3>
+      
+        <ion-input type="text" placeholder="Enter input to Speak."></ion-input>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
-</ion-content>
+      
+        <ion-range (ionChange)="onIonChange($event)"></ion-range>
+        <ion-label>{{ lastEmittedValue }}</ion-label>
+      
+      <p>
+        <ion-button (click)="speak()">Speak</ion-button>
+        <ion-button (click)="stop()">Pause</ion-button>
+      </p>
+    </ion-card-content>
+
+
+

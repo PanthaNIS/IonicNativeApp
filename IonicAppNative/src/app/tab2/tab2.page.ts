@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RangeCustomEvent } from '@ionic/angular';
 import { RangeValue } from '@ionic/core';
+import { TextToSpeechAdvanced } from '@awesome-cordova-plugins/text-to-speech-advanced/ngx';
 @Component({
   selector: 'app-tab2',
   templateUrl: 'tab2.page.html',
@@ -23,6 +24,6 @@ export class Tab2Page {
     console.log('stop');
   }
 
-  constructor() {}
+  constructor(private tts: TextToSpeechAdvanced) {}
 
 }

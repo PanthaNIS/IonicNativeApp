@@ -16,7 +16,7 @@
     <ion-card-content>
       <h3>Please Enter the text in input field below.</h3>
       
-        <ion-input type="text" placeholder="Enter input to Speak."></ion-input>
+        <ion-input type="text" placeholder="Enter input to Speak." [(ngModel)]="text"></ion-input>
 
       
         <ion-range (ionChange)="onIonChange($event)"></ion-range>

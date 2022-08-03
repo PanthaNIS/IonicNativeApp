@@ -23,8 +23,9 @@
         <ion-label>{{ lastEmittedValue }}</ion-label>
       
       <p>
-        <ion-button (click)="speak()">Speak</ion-button>
-        <ion-button (click)="stop()">Pause</ion-button>
+        <!-- icon source ionic framework doc  -->
+        <ion-button (click)="speak()">Speak <ion-icon name="play-outline"></ion-icon></ion-button>
+        <ion-button (click)="stop()">Pause <ion-icon name="stop-outline"></ion-icon></ion-button>
       </p>
     </ion-card-content>
 

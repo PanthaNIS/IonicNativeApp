@@ -9,21 +9,32 @@ import { TextToSpeechAdvanced } from '@awesome-cordova-plugins/text-to-speech-ad
 })
 export class Tab2Page {
 
+  public text : string;
+  public speed : number [];
 
   lastEmittedValue: RangeValue;
 
   onIonChange(ev: Event) {
     this.lastEmittedValue = (ev as RangeCustomEvent).detail.value;
   }
+  constructor(private tts: TextToSpeechAdvanced) {
 
-  speak() {
-    console.log('speak');
+    this.speed = [ 0.5, 0.75, 1 ];
   }
 
-  stop() {
-    console.log('stop');
+  // source https://www.bennadel.com/blog/3955-having-fun-with-the-speechsynthesis-api-in-angular-11-0-5.htm
+  
+  public speak() : void {
+
+		
+    this.tts.speak(this.text);
+
+	}
+
+  public stop() : void {
+    this.tts.stop();
   }
 
-  constructor(private tts: TextToSpeechAdvanced) {}
+  
 
 }

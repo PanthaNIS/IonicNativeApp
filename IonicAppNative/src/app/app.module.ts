@@ -10,12 +10,15 @@ import { AppComponent } from './app.component';
 // source https://ionicframework.com/docs/native/
 import { Device } from '@awesome-cordova-plugins/device/ngx';
 import { TextToSpeechAdvanced } from '@awesome-cordova-plugins/text-to-speech-advanced/ngx';
+import { NativeAudio } from '@awesome-cordova-plugins/native-audio/ngx';
+
+
 
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [
-    Device,TextToSpeechAdvanced,
+    Device,TextToSpeechAdvanced,NativeAudio,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })

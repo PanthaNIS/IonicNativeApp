@@ -21,13 +21,6 @@
       <ion-item>
           <ion-label>Speed:</ion-label>
           <ion-select [(ngModel)]="selectedSpeed">
-            <ion-select-option *ngFor="let rate of rates"
-            [ngValue]="rate">
-            {{ rate }}
-    
-            <ng-template [ngIf]="( rate === 1 )">
-              ( Normal )
-            </ng-template></ion-select-option>
             <ion-select-option value="0.5">0.5</ion-select-option>
             <ion-select-option value="0.75">0.75</ion-select-option>
             <ion-select-option value="1">1</ion-select-option>

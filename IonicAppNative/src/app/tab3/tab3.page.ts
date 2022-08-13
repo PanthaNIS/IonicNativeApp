@@ -12,8 +12,8 @@ import { NativeAudio } from '@awesome-cordova-plugins/native-audio/ngx';
 export class Tab3Page {
 
 
-  pinFormatter(value: number=100) {
-    return `${value}%`;
+  pinFormatter(volume: number=100) {
+    return `${volume}%`;
   }
 
   volume:number=100;

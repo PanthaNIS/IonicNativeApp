@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import { Device } from '@awesome-cordova-plugins/device/ngx';
 import { TextToSpeechAdvanced } from '@awesome-cordova-plugins/text-to-speech-advanced/ngx';
 import { NativeAudio } from '@awesome-cordova-plugins/native-audio/ngx';
+import { DeviceOrientation } from '@awesome-cordova-plugins/device-orientation/ngx';
 
 
 
@@ -18,7 +19,7 @@ import { NativeAudio } from '@awesome-cordova-plugins/native-audio/ngx';
   declarations: [AppComponent],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [
-    Device,TextToSpeechAdvanced,NativeAudio,
+    Device,TextToSpeechAdvanced,NativeAudio,DeviceOrientation,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })

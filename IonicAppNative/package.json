@@ -20,6 +20,7 @@
     "@angular/platform-browser-dynamic": "^14.0.0",
     "@angular/router": "^14.0.0",
     "@awesome-cordova-plugins/device": "^5.44.0",
+    "@awesome-cordova-plugins/device-orientation": "^5.44.0",
     "@awesome-cordova-plugins/native-audio": "^5.44.0",
     "@awesome-cordova-plugins/text-to-speech-advanced": "^5.44.0",
     "@capacitor/app": "4.0.1",
@@ -52,6 +53,7 @@
     "@typescript-eslint/parser": "5.3.0",
     "cordova-ios": "6.2.0",
     "cordova-plugin-device": "2.0.2",
+    "cordova-plugin-device-orientation": "^2.0.1",
     "cordova-plugin-ionic-keyboard": "^2.0.5",
     "cordova-plugin-ionic-webview": "^5.0.0",
     "cordova-plugin-nativeaudio": "^3.0.9",
@@ -83,7 +85,8 @@
       "cordova-plugin-ionic-webview": {},
       "cordova-plugin-ionic-keyboard": {},
       "cordova-plugin-tts-advanced": {},
-      "cordova-plugin-nativeaudio": {}
+      "cordova-plugin-nativeaudio": {},
+      "cordova-plugin-device-orientation": {}
     },
     "platforms": [
       "ios"

@@ -6,4 +6,20 @@
 
 <ion-content>
 
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Battery Status</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-card>
+    <ion-card-content>
+      <h4>Battery Status: {{percentage}}</h4><br>
+      <h4>Charger Connection Status: {{isPlugged}}</h4><br>
+      <h4> FlashLight:<ion-toggle color="danger" checked="false" (ionChange)="toggleFlashlight()"></ion-toggle></h4><br>
+      <ion-item>
+        <p>{{message}}</p>
+      </ion-item>
+      </ion-card-content> 
+  </ion-card>
+
 </ion-content>

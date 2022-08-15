@@ -12,6 +12,9 @@ import { Device } from '@awesome-cordova-plugins/device/ngx';
 import { TextToSpeechAdvanced } from '@awesome-cordova-plugins/text-to-speech-advanced/ngx';
 import { NativeAudio } from '@awesome-cordova-plugins/native-audio/ngx';
 import { DeviceOrientation } from '@awesome-cordova-plugins/device-orientation/ngx';
+import { BatteryStatus } from '@awesome-cordova-plugins/battery-status/ngx';
+import { Flashlight } from '@awesome-cordova-plugins/flashlight/ngx';
+import { SplashScreen } from '@awesome-cordova-plugins/splash-screen/ngx';
 
 
 
@@ -19,7 +22,7 @@ import { DeviceOrientation } from '@awesome-cordova-plugins/device-orientation/n
   declarations: [AppComponent],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [
-    Device,TextToSpeechAdvanced,NativeAudio,DeviceOrientation,
+    Device,TextToSpeechAdvanced,NativeAudio,DeviceOrientation,BatteryStatus, Flashlight, SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })
